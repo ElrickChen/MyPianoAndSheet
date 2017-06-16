@@ -763,6 +763,7 @@ function addNote(noteObj) {
             alert("不能更多了QAQ");
         }
     }
+console.log("keys: ["+noteObj.keys+"], duration: "+noteObj.duration+", accidental: "+noteObj.accidental);
 
     context.clear();
     prepareStave();
