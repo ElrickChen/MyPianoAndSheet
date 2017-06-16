@@ -747,7 +747,7 @@ function addNote(noteObj) {
         if (noteObj.accidental == "none")
             notes.splice(noteIndex, 1, new Vex.Flow.StaveNote(noteObj));
         else
-            notes.splice(noteAccidental, 1, new Vex.Flow.StaveNote(noteObj).addAccidental(0, new Vex.Flow.Accidental(noteAccidental.value)));
+            notes.splice(noteObj.accidental, 1, new Vex.Flow.StaveNote(noteObj).addAccidental(0, new Vex.Flow.Accidental(noteObj.accidental)));
     }
         // 加入新 note
     else {
@@ -756,7 +756,7 @@ function addNote(noteObj) {
             if (noteObj.accidental == "none")
                 notes.push(new Vex.Flow.StaveNote(noteObj));
             else
-                notes.push(new Vex.Flow.StaveNote(noteObj).addAccidental(0, new Vex.Flow.Accidental(noteAccidental.value)));
+                notes.push(new Vex.Flow.StaveNote(noteObj).addAccidental(0, new Vex.Flow.Accidental(noteObj.accidental)));
             noteIndex = notes.length;
         }
         else {
