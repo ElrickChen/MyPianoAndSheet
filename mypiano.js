@@ -47,7 +47,7 @@ function dealActive(keyName,row)
         var nn = keyName.substr(1, 1).toLowerCase();
         var na = keyName.substr(2, 1);
         var noteAcc = (na == "s") ? "#" : "";
-        var noteAcci = (na == "s") ? "#" : "none"
+        var noteAcci = (na == "s") ? "#" : "none";
         var noteObject = { keys: [nn + noteAcc + "/" + no], duration: "q", accidental: noteAcci };
         addNote(noteObject);
     }
