@@ -1,128 +1,116 @@
-
-
-.select{
-	width:33px;
-	height:30px;
-	background:black;
-	padding-top:7px;
-	text-align:center;
-	color:white;
-	float:left;
-	border:3px solid black ;
-	cursor: pointer; 
-	user-select: none;
-	display:none;
-}
-.select:hover{
-background-color:#DDDDDD;
-}
-	
-.group{
-	
-	position:relative;
-	float:left;
-	
-	
-}
-#row1{
-
-	top:6%;
-	left:1.05%;
-	position:absolute;
-}
-#row2{
-	top:48%;
-	left:1.05%;
-	position:absolute;
-}
-#select1{
-	top:1%;
-	left:1%;
-	position:absolute;
-}
-#select2{
-	top:43%;
-	left:1%;
-	position:absolute;
+.select {
+    width: 33px;
+    height: 30px;
+    background: black;
+    padding-top: 7px;
+    text-align: center;
+    color: white;
+    float: left;
+    border: 3px solid black;
+    cursor: pointer;
+    user-select: none;
+    display: none;
 }
 
+    .select:hover {
+        background-color: #DDDDDD;
+    }
 
-.row{
-	
-
-	width:98%;
-	height:36%;
-	
-
-	
+.group {
+    position: relative;
+    float: left;
 }
 
+#row1 {
+    top: 6%;
+    left: 1.05%;
+    position: absolute;
+}
+
+#row2 {
+    top: 48%;
+    left: 1.05%;
+    position: absolute;
+}
+
+#select1 {
+    top: 1%;
+    left: 1%;
+    position: absolute;
+}
+
+#select2 {
+    top: 43%;
+    left: 1%;
+    position: absolute;
+}
+
+.row {
+    width: 98%;
+    height: 36%;
+}
 
 .wKey {
-		display:none;
-		float:left;
-		width:90px;
-		height:100%;
-		background-color: ghostwhite ;
-		border:1px solid;
-		z-index:0;
-		position:relative;
-		border-radius: 0 0 10px 10px; 
-		box-shadow:0px 5px 0px 1px #666666;
-		
-		
-		
+    display: none;
+    float: left;
+    width: 90px;
+    height: 100%;
+    background-color: ghostwhite;
+    border: 1px solid;
+    z-index: 0;
+    position: relative;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px 5px 0px 1px #666666;
 }
 
-.wKey:active
-{
-	box-shadow: 0 -3px 10px 3px #666666 inset;
-}
-.wKey.mousedown
-{
-	box-shadow: 0 -3px 10px 3px #666666 inset;
-}
+    .wKey:active {
+        box-shadow: 0 -3px 10px 3px #666666 inset;
+    }
 
+    .wKey.mousedown {
+        box-shadow: 0 -3px 10px 3px #666666 inset;
+    }
 
 .bKey {
-		display:none;
-		float:left;
-		width:46px;
-		height:70%;
-		background-color: black ;
-		border: 1px solid;
-		z-index:100;
-		position:absolute;
-		border-radius: 0 0 10px 10px; 
-		box-shadow:0px 5px #444444;
+    display: none;
+    float: left;
+    width: 46px;
+    height: 70%;
+    background-color: black;
+    border: 1px solid;
+    z-index: 100;
+    position: absolute;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px 5px #444444;
 }
-.bKey.mousedown
-{
-    box-shadow: 0 3px  #666666 inset;
-}
-.bKey:active
-{
-    
-	
-	
-	box-shadow: 0 3px  #666666 inset;
-}
-#otherField{
-		top:85%;
-		position:absolute;
-		width:100%;
-		height:30%;
 
+    .bKey.mousedown {
+        box-shadow: 0 3px #666666 inset;
+    }
+
+    .bKey:active {
+        box-shadow: 0 3px #666666 inset;
+    }
+
+#otherField {
+    top: 85%;
+    position: absolute;
+    width: 100%;
+    height: 30%;
 }
-#key{
-	font-size:72;
-	height:160px;
-	width:160px;
-	border-radius:99em;
-	border: 1px solid;
-	text-align:center;
-	line-height:160px;
-	
 
+#key {
+    font-size: 72;
+    height: 160px;
+    width: 160px;
+    border-radius: 99em;
+    border: 1px solid;
+    text-align: center;
+    line-height: 160px;
+}
 
+a {
+    position: absolute;
+    left: 90%;
+    text-decoration: none;
 }
