@@ -42,20 +42,15 @@ function dealActive(keyName, row) {
         var na = keyName.substr(2, 1);
         var noteAcc = (na == "s") ? "#" : "";
         var noteAcci = (na == "s") ? "#" : "none";
-<<<<<<< HEAD
         //console.log("keys: [" + nn + noteAcc + "/" + no + "], duration: \"q\", accidental:" + noteAcci);
-
-=======
->>>>>>> fc61def8467eaad0296334f06da9774a04ff0884
         var noteObject = { keys: [nn + noteAcc + "/" + no], duration: "q", accidental: noteAcci };
         addNote(noteObject);
     }
     var A = document.getElementById("sound" + keyName);
-    console.log(A);
+    // console.log(A);
     if (A.ended == false)
         A.load();
     A.play();
-
 
 }
 
@@ -299,8 +294,8 @@ function jumpSelect(direct) {
         }
     else
         if (direct == 1) {
-            console.log(parseInt(last.charAt(0)));
-            console.log(NextScale);
+            //console.log(parseInt(last.charAt(0)));
+            //console.log(NextScale);
             NextScale = parseInt(last.charAt(0)) + 1;
             NextSolmization = "C";
         }
@@ -353,7 +348,7 @@ function shiftSelect(direct) {
         }
     }
     NextSolmization = String.fromCharCode(NextSolmization);
-    console.log(NextScale + NextSolmization + "select" + controlRow);
+    //console.log(NextScale + NextSolmization + "select" + controlRow);
     generatePiano(document.getElementById("row" + controlRow), NextScale + NextSolmization + "select" + controlRow, document.getElementById(last));
 }
 
@@ -399,7 +394,7 @@ function matchKey(row, d) {
     for (var i in key) {
         if (event.key.toLowerCase() == key[i].toLowerCase()) {
             if (d == 0) {
-                console.log("find");
+                //console.log("find");
                 if (keyPressed[i] == 1)
                     return 1;
                 keyPressed[i] = 1;
@@ -426,7 +421,7 @@ function start() {
     $(".select").slideDown(1000);
     generatePiano(document.getElementById("row1"), "3Cselect1");
     generatePiano(document.getElementById("row2"), "3Cselect2");
-    console.log(document.getElementById("select1"));
+    //console.log(document.getElementById("select1"));
     $("#select1 > div:eq(0)").css("border-left-color", controlColor);
     document.onkeypress = function () {
         var find = matchKey(1, 0);
@@ -638,12 +633,8 @@ function addNote(noteObj) {
             alert("不能更多了QAQ");
         }
     }
-<<<<<<< HEAD
     console.log("keys: [" + noteObj.keys + "], duration: " + noteObj.duration + ", accidental: " + noteObj.accidental);
-=======
-console.log("keys: ["+noteObj.keys+"], duration: "+noteObj.duration+", accidental: "+noteObj.accidental);
->>>>>>> fc61def8467eaad0296334f06da9774a04ff0884
-
+    
     context.clear();
     prepareStave();
     prepareNotes();
